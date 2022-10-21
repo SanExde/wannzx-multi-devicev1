@@ -1,6 +1,6 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
     const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/avatar_contact.png'
-    const { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antitoxic, delete: del } = global.db.data.chats[m.chat]
+    const { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiVirtex, antiToxic, delete: del } = global.db.data.chats[m.chat]
     const groupAdmins = participants.filter(p => p.admin)
     const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
@@ -23,7 +23,8 @@ ${welcome ? '✅' : '❌'} Welcome
 ${detect ? '✅' : '❌'} Detect
 ${del ? '❌' : '✅'} Anti Delete
 ${antiLink ? '✅' : '❌'} Anti Link
-${antitoxic ? '✅' : '❌'} Anti Toxic
+${antiToxic ? '✅' : '❌'} Anti Toxic
+${antiVirtex ? '✅' : '❌'} Anti Virtex
 *Message Settings:*
 Welcome: ${sWelcome}
 Bye: ${sBye}
@@ -35,7 +36,7 @@ Demote: ${sDemote}
 
 handler.help = ['infogrup']
 handler.tags = ['group']
-handler.command = /^gcinfo|infogc$/i
+handler.command = /^gcinfo|infogc|gci|igc$/i
 handler.group = true
 
 export default handler

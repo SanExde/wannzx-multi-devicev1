@@ -193,7 +193,7 @@ const listMessage = {
   text: `「 𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝 」`,
   footer: teks,
   title: 'ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ɴᴏᴡ!',
-  buttonText: "⫷ ᴘʟᴀʏɪɴɢ ɴᴏᴡ.. ⫸",
+  buttonText: " ᴘʟᴀʏɪɴɢ ɴᴏᴡ.. ",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: fkontak, mentions: await conn.parseMention(teks), contextInfo:{ forwardingScore: 99999, isForwarded: false }})

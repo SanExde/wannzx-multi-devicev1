@@ -15,7 +15,7 @@ let str = `⟣─══⟪ *𝐑𝐮𝐥𝐞𝐬 𝐖𝐚𝐧𝐧𝐁𝐨𝐭�
 *Hormat Kami:*\n\n*©「 𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝 」*
 `
 
-conn.sendButtonDoc(m.chat, str, botdate,' ⫷ ᴏᴡɴᴇʀ ⫸ ','owner', m, { contextInfo: { externalAdReply: { showAdAttribution: false,
+conn.sendButtonDoc(m.chat, str, botdate,' ⫷ ᴏᴡɴᴇʀ ⫸ ','.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: false,
     mediaUrl: 'https://instagram/wannzx_133',
     mediaType: 2, 
     description: sgc,

@@ -141,78 +141,6 @@ import db from '../lib/database.js'
       }
       chat.antiLink = isEnable
       break
-    case 'antilinkbitly':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkBitly = isEnable
-      break
-      case 'antilinktik':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkTik = isEnable
-      break
-      case 'antilinkyt':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkYt = isEnable
-      break
-      case 'antilinktel':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkTel = isEnable
-      break
-      case 'antilinkfb':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkFb = isEnable
-      break
-      case 'antilinkig':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkIg = isEnable
-      break
-      case 'antilinkwa':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkWa = isEnable
-      break
-      case 'antihatetepe':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiLinkHttp = isEnable
-      break
       case 'nsfw':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -231,15 +159,6 @@ import db from '../lib/database.js'
       }
       chat.antiVirtex = isEnable
       break
-      case 'antisatir':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiSatir = isEnable
-      break
       case 'simi':
         if (!isROwner) {
           global.dfail('rowner', m, conn)
@@ -247,33 +166,12 @@ import db from '../lib/database.js'
         }
       chat.simi = isEnable
       break
-      case 'autovn':
-        if (!isROwner) {
-          global.dfail('rowner', m, conn)
-          throw false
-        }
-      chat.autoVn = isEnable
-      break
       case 'autopresence':
         if (!isROwner) {
           global.dfail('rowner', m, conn)
           throw false
         }
       chat.autoPesence = isEnable
-      break
-      case 'autoreply':
-        if (!isROwner) {
-          global.dfail('rowner', m, conn)
-          throw false
-        }
-      chat.autoReply = isEnable
-      break
-      case 'autosticker':
-        if (!isROwner) {
-          global.dfail('rowner', m, conn)
-          throw false
-        }
-      chat.autoSticker = isEnable
       break
       case 'antisticker':
       if (m.isGroup) {
@@ -290,29 +188,6 @@ import db from '../lib/database.js'
           throw false
         }
       chat.autoJoin = isEnable
-      break
-      case 'autoupnews':
-        if (!isROwner) {
-          global.dfail('rowner', m, conn)
-          throw false
-        }
-      chat.updateAnimeNews = isEnable
-      break
-      case 'autoupnime':
-        if (!isROwner) {
-          global.dfail('rowner', m, conn)
-          throw false
-        }
-      chat.updateAnime = isEnable
-      break
-     case 'toxic':
-       if (m.isGroup) {
-         if (!(isAdmin || isOwner)) {
-           global.dfail('admin', m, conn)
-           throw false
-         }
-       }
-       chat.antiToxic = !isEnable
        break
      case 'antitoxic':
        if (m.isGroup) {
@@ -415,38 +290,20 @@ import db from '../lib/database.js'
       global.opts['swonly'] = isEnable
       break
               default: 
-       if (!/[01]/.test(command)) return conn.sendButton(m.chat, `*〔 llı OPTIONS ıll 〕*`, `
-    
-    
-꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦
+       if (!/[01]/.test(command)) return conn.sendButton(m.chat, `${htka} OPTIONS ${htki}`, `
    
-Antidelete
-Antilink
-AntilinkFb
-AntilinkIg
-Antilinktel
-AntilinkTik
-AntilinkWa
-Antilinkbitly
-AntilinkYt
-Antihatetepe
-AntiSatir
-AntiSpam
-AntiSticker
-Antiviewonce
-AntiToxic
-AntiVirtex
-AutoDelVn
-AutoJoin
-AutoLevelup
-AutoPresence
-AutoRead
-AutolReply
-AutoSticker
-AutoUpnime
-AutoUpNews
-AutoVn
-BcJoin
+antidelete
+antilink
+antiSpam
+antiSticker
+antiviewonce
+antiToxic
+antiVirtex
+autoDelVn
+autoJoin
+autoLevelup
+autoPresence
+autoRead
 Delete
 Detect
 Document
@@ -460,12 +317,10 @@ Simi
 SwOnly
 Welcome
 WhiteListMyContact
-freply
-clear
 getmsg
 desc
   
-▶︎ ━━━━━━━•──────────── 
+▶︎ ━━━━━━━•──────────
       ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻
 
 📜 *TUTORIAL*
@@ -476,7 +331,7 @@ desc
 
 📮Pastikan Huruf kecil semua!
  `.trim(), `./media/on-off.jpg`, [ 
- [`⫷ ɢʀᴏᴜᴘ ᴏғғɪᴄɪᴀʟ ⫸`, `${usedPrefix}gcwann`] 
+ [`⫷ ɢʀᴏᴜᴘ ᴏғғɪᴄɪᴀʟ ⫸`, `.gcwann`] 
  ], m, {asLocation:true}) 
        throw false 
    } 
@@ -487,8 +342,8 @@ desc
    ${isAll ? 'Bot Only' : isUser ? '' : 'Chat Only'} 
  `, `${imgr + 'Options'}`, [['⫷ ᴍᴇɴᴜ ⫸', '.menu'],['⫷ ᴏᴋᴇ ⫸', 'Ok']],m)
  } 
- handler.help = ['settings'] 
- handler.tags = ['Bot'] 
+ handler.help = ['enable'] 
+ handler.tags = ['info'] 
  handler.command = /^((en|dis)able|setting|settings|(tru|fals)e|(turn)?o(n|ff)|[01])$/i 
   
  export default handler

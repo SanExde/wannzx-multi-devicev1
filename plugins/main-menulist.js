@@ -61,7 +61,7 @@ let tags
 let rndom = `${pickRandom(['defaultMenu', 'defmenu1'])}`
 let teks = `${args[0]}`.toLowerCase()
 let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'edukasi', 'news', 'random', 'game', 'xp', 
-'menbalas', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database","quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+'menbalas', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database","quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
 if (!arrayMenu.includes(teks)) teks = '404'
 if (teks == 'all') tags = {
 'main': ' 𝗠𝗔𝗜𝗡',
@@ -147,9 +147,11 @@ if (teks == 'internet') tags = {
 if (teks == 'anonymous') tags = {
 'anonymous': 'Anonymous Chat'
 }
+if (teks == 'maker') tags = {
+'maker': 'Maker',
+}
 if (teks == 'nulis') tags = {
 'nulis': 'Nulis',
-'maker': 'Maker'
 }
 if (teks == 'downloader') tags = {
 'downloader': 'Downloader'
@@ -223,20 +225,10 @@ setTimeout(resolve, 1000)
 }
 let mpt = clockString(_mpt)
 const sections = [{
-title: `${htka} 𝐌𝐀𝐈𝐍 ${htki}`,
-rows: [
-{title: `${emot} GROUP BOT`, rowId: ".gcwann", description: "Group WannBotz-MD Official"},
-{title: `${emot} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-{title: `${emot} SCRIPT BOT`, rowId: ".sc", description: `Source Code`},
-{title: `${emot} SEWA BOT`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-{title: `${emot} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-{title: `${emot} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
-{title: `${emot} S & K WannBotz-MD`, rowId: ".rules", description: 'Syarat dan ketentuan BOT'},
-]
-},{
 title: `${htka} 𝐌𝐄𝐍𝐔 ${htki}`,
 rows: [
 {title: `${emot} Menfess`, rowId: ".? Menbalas", description: "Menampilkan Semua command menfess"},
+{title: `${emot} Logo maker`, rowId: ".? maker", description: "Buat logo kamu sekarang"},
 {title: `${emot} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
 {title: `${emot} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
 {title: `${emot} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
@@ -262,6 +254,17 @@ rows: [
 {title: `${emot} Info`, rowId: ".? info", description: "Info info BOT"},
 {title: `${emot} Owner`, rowId: ".? owner", description: "Owner Only!"},
 {title: `\n${emot} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+]
+},{
+title: `${htka} 𝐌𝐀𝐈𝐍 ${htki}`,
+rows: [
+{title: `${emot} GROUP BOT`, rowId: ".gcwann", description: "Group WannBotz-MD Official"},
+{title: `${emot} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+{title: `${emot} SCRIPT BOT`, rowId: ".sc", description: `Source Code`},
+{title: `${emot} SEWA BOT`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+{title: `${emot} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
+{title: `${emot} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+{title: `${emot} S & K WannBotz-MD`, rowId: ".rules", description: 'Syarat dan ketentuan BOT'},
 ] },
 ]
 let psan = 'bagaimana kabarmu?'
