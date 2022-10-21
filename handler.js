@@ -177,6 +177,8 @@ export async function handler(chatUpdate) {
 
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
+                  if (!isNumber(user.antispam)) user.antispam = 0
+                  if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0                    
                 if (!isNumber(user.lastadventure))
                     user.lastadventure = 0
                 if (!isNumber(user.lastfishing))
@@ -308,8 +310,8 @@ export async function handler(chatUpdate) {
                     chat.antiLink = true
                 if (!('viewonce' in chat))
                     chat.viewonce = false
-                if (!('antiBadword' in chat)) 
-                    chat.antiBadword = false
+                if (!('antiToxic' in chat)) 
+                    chat.antiToxic = true
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('nsfw' in chat))
@@ -330,7 +332,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: true,
                     viewonce: false,
-                    antiBadword: true,
+                    antiToxic: true,
                     simi: false,
                     expired: 0,
                     nsfw: false,
