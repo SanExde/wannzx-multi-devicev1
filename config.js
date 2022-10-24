@@ -81,37 +81,37 @@ const readMore = more.repeat(4001)
 
 global.owner = [
 ['6281265970249', '𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝', true],
-['6283870480221', '𝐖𝐚𝐧𝐧𝐁𝐨𝐭𝐳-𝐌𝐃', true]
+['6281326494085', '𝐍𝐢𝐭𝐭𝐚𝐒𝐭𝐨𝐫𝐞', true]
 ]
 global.mods = []
 global.prems = []
 global.nomorbot = '6281265970249'
 global.nomorown = '6281265970249'
 global.nomorown1 = '6281265970249'
-global.nomorown2 = '6283870480221'
+global.nomorown2 = '6281326494085'
 global.nomorwa = '0'
 
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ WM ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 
 global.readMore = readMore
-global.author = '「 𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝 」'
-global.namebot = '​ 「 𝐖𝐚𝐧𝐧𝐁𝐨𝐭𝐳-𝐌𝐃 」'
-global.wm = '© 𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝘽𝙮 𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝'
+global.author = '「 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞 」'
+global.namebot = '​ 「 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞 」'
+global.wm = '© 𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝘽𝙮 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞'
 global.media = 'https://telegra.ph/file/266b27b2c563f41d48609.jpg'
-global.wm = '「 𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝 」 '
+global.wm = '「 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞 」 '
 global.watermark = wm
-global.wm2 = '「 𝐖𝐚𝐧𝐧𝐁𝐨𝐭𝐳-𝐌𝐃 」 '
+global.wm2 = '「 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞 」 '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ TIME: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝`
-global.stickpack = '𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝'
-global.stickauth = `© 𝐖𝐚𝐧𝐧𝐁𝐨𝐭𝐳-𝐌𝐃`
+global.titlebot = `𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞`
+global.stickpack = '𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞'
+global.stickauth = `© 𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞`
 global.week = `${week} ${date}`
 global.wibb = `${wktuwib}`
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ OWNER INFO ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.nameown1= '𝐖𝐚𝐧𝐧𝐳𝐱-𝐌𝐝'
-global.nameown2 = '𝐖𝐚𝐧𝐧𝐁𝐨𝐭𝐳-𝐌𝐃'
+global.nameown2 = '𝐍𝐢𝐭𝐭𝐚-𝐒𝐭𝐨𝐫𝐞'
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ MEDIA LINK ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.Linkgc = 'Bentar'
 global.lynk = 'https://lynk.id/hyuuraofc'
